@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .myDIV {
+        width: 500px;
+        height: 500px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="mordo" style="width: 200px" onclick="myFunction()">
+      Try it
+    </button>
+
+    <div class="myDIV" style="display: none">This is my DIV element.</div>
+
+    <script>
+      //   function myFunction() {
+      //     var x = document.getElementById("myDIV");
+      //     if (x.style.display === "none") {
+      //       x.style.display = "block";
+      //     } else {
+      //       x.style.display = "none";
+      //     }
+      //   }
+      function myFunction() {
+        let btn = document.querySelector(".myDIV");
+        if (btn.style.display === "none") {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
